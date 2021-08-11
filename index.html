@@ -1,161 +1,237 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="bg-primary" align="center"><marquee>Projet POO2 Génie Civil</marquee></h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="card text-left">
-                  <img class="card-img-top" src="holder.js/100px180/" alt="">
-                  <div class="card-body">
-                        <h4 class="card-title">Présentation</h4>
-                         <p class="card-text"><p>Bienvenue dans le site officiel de GenieCivil2D qui est un projet réalisé par deux étudiantes en Licence 3 en Génie Informatique 
-                        nommées respectivement <mark class="text-primary">Seynabou SARR</mark> et <mark class="text-primary">Mariama Fatou Sarr DIOP</mark></p>
-                        <p>
-                        <p>En effet le GenieCivil2D permet de  tracer tous vos figures avec de simples bouts de code, ainsi dans cette page vous verrez deux figures 
-                        réalisé à partir de ce dernier en utilisant <mark class="text-success">le module turtle</mark> de Python et 
-                        <!-- Lien vers le code -->
-                        <a  href="https://github.com/MFSDIOP/POO2G-nieCivil/blob/master/genieCivilOuvrage2D.py" ><mark class="text-success">le module genieCivilOuvrage2D</mark></a>.
-                        </p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="jumbotron mt-2 bg-white">
-                <h1 class="display-3 text-primary" align="center">Maquette d'un pont</h1>
-                <p class="lead">Cette figure reprèsente la maquette d'un pont tracée grâce aux fonctions <mark class="text-success">Triangle, Rectangle et Ellipse </mark>de la module
-                    genieCivilOuvrage2D.
-                </p>
-                <hr class="my-2">
-                <p>Vous pouvez voir l'image de la figure en cliquant sur le bouton suivant</p>
-                <p class="lead"></p>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-                  Voir la figure 1
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Projet POO2</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Navigation
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>-->
+               <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
                 </button>
-                
-                <!-- Modal -->
-                <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Maquette d'un pont</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="Pontbi.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
-                                <!-- Lien vers le code -->
-                                <a name="code1" id="code1" class="btn btn-primary mt-1" href="https://github.com/MFSDIOP/POO2G-nieCivil/blob/master/pont.py" role="button">Voir le code</a>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                            </div>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>-->
+            <!-- </div>
+        </nav>
+        Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Projet POO2 Génie Civil</h1>
+                            <span class="subheading">Un projet réalisé par Seynabou SARR et Mariama Fatou Sarr DIOP</span>
                         </div>
                     </div>
                 </div>
-            </div>  
-        </div>
-        <div class="row">
-            <div class="jumbotron mt-2 bg-white">
-                <h1 class="display-3 text-primary" align="center">Façade d'une maison</h1>
-                <p class="lead">Cette figure reprèsente la façade d'une maison tracée grâce aux fonctions <mark class="text-success">Carré, Rectangle, Cercle et Trapèze </mark>de la module
-                    genieCivilOuvrage2D.
-                </p>
-                <hr class="my-2">
-                <p>Vous pouvez voir l'image de la figure en cliquant sur le bouton suivant:</p>
-                <p class="lead"></p>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#maison">
-                  Voir la figure 2
-                </button>
-                
-                <!-- Modal -->
-                <div class="modal fade modal animate" id="maison" tabindex="-1" role="dialog" aria-labelledby="maison" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Façade d'une maison</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="keurgui.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
-                                <!-- Lien vers le code -->
-                                <a name="code1" id="code1" class="btn btn-primary mt-1" href="https://github.com/MFSDIOP/POO2G-nieCivil/blob/master/maison.py" role="button">Voir le code</a>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-            <div class="row">
-                <div class="jumbotron bg-white">
-                    <h1 class="display-3 text-primary" align="center">Commentaires de spécification</h1>
-                    <p class="lead">Cette partie vous permet de voir les différentes commentaires de spécification des fonctions qui composent le genieCivilOuvrage2D,
-                        le figure1 et le figure2
-                    </p>
-                    <hr class="my-2">
-                    <p>Cliquez sur le bouton suivant pour voir le fichier pdf des commentaires:</p>
-                    <p class="lead"></p>
-                            <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#comment">
-                        Voir les commentaires
-                      </button>
-                      
-                      <!-- Modal -->
-                      <div class="modal fade" id="comment" tabindex="-1" role="dialog" aria-labelledby="comment" aria-hidden="true">
-                          <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <h5 class="modal-title">Commentaires de spécification</h5>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                              <span aria-hidden="true">&times;</span>
-                                          </button>
-                                  </div>
-                                  <div class="modal-body">
-                                      <!-- object/ PDF ... -->
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                                <object class="embed-responsive-item" data="CommentairesgenieCivil.pdf"
-                                                type="application/pdf" internalinstanceid="9" title="">
-                                                <p>
-                                                <a href="CommentairesgenieCivil.pdf">ici</a>
-                                                </p>
-                                                </object>
-                                        </div>
-                                  </div>
-                                  <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                                  </div>
-                              </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="card text-left">
+                        <img class="card-img-top" src="holder.js/100px180/" alt="">
+                        <div class="card-body">
+                              <h4 class="card-title bg-primary" align="center"><marquee>Présentation</marquee></h4>
+                               <p class="card-text"><p>Bienvenue dans le site officiel de GenieCivil2D qui est un projet réalisé par deux étudiantes en Licence 3 en Génie Informatique </p>
+                              <p>
+                              <p>En effet le GenieCivil2D permet de  tracer tous vos figures avec de simples bouts de code, ainsi dans cette page vous verrez deux figures 
+                              réalisé à partir de ce dernier en utilisant <mark class="text-success">le module turtle</mark> de Python et  
+                               <!--Lien vers le code -->
+                               <a  href="https://github.com/MFSDIOP/POO2G-nieCivil/blob/master/genieCivilOuvrage2D.py" >le module genieCivilOuvrage2D</a>
+                              </p></p>
                           </div>
+                      </div>
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <div class="row">
+                            <div class="jumbotron mt-2 bg-white">
+                                <h1 class="display-3 text-primary" align="center">Maquette d'un pont</h1>
+                                <p class="lead">Cette figure reprèsente la maquette d'un pont tracée grâce aux fonctions <mark class="text-success">Triangle, Rectangle et Ellipse </mark>de la module
+                                    genieCivilOuvrage2D.
+                                </p>
+                                <hr class="my-2">
+                                <p>Vous pouvez voir l'image de la figure en cliquant sur le bouton suivant</p>
+                                <p class="lead"></p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#model">
+                                  Voir la figure 1
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="model" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Maquette d'un pont</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="assets/img/Pontbi.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                                                <!-- Lien vers le code -->
+                                                <a name="code1" id="code1" class="btn btn-primary mt-1" href="https://github.com/MFSDIOP/POO2G-nieCivil/blob/master/pont.py" role="button">Voir le code</a>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <div class="row">
+                            <div class="jumbotron mt-2 bg-white">
+                                <h1 class="display-3 text-primary" align="center">Façade d'une maison</h1>
+                                <p class="lead">Cette figure reprèsente la façade d'une maison tracée grâce aux fonctions <mark class="text-success">Carré, Rectangle, Cercle et Trapèze </mark>de la module
+                                    genieCivilOuvrage2D.
+                                </p>
+                                <hr class="my-2">
+                                <p>Vous pouvez voir l'image de la figure en cliquant sur le bouton suivant:</p>
+                                <p class="lead"></p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#maison">
+                                  Voir la figure 2
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="maison" tabindex="-1" role="dialog" aria-labelledby="maison" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Façade d'une maison</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="assets/img/keurgui.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                                                <!-- Lien vers le code -->
+                                                <a name="code1" id="code1" class="btn btn-primary mt-1" href="https://github.com/MFSDIOP/POO2G-nieCivil/blob/master/maison.py" role="button">Voir le code</a>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <div class="row">
+                            <div class="jumbotron bg-white">
+                                <h1 class="display-3 text-primary" align="center">Commentaires de spécification</h1>
+                                <p class="lead">Cette partie vous permet de voir les différentes commentaires de spécification des fonctions qui composent le genieCivilOuvrage2D,
+                                    le figure1 et le figure2
+                                </p>
+                                <hr class="my-2">
+                                <p>Cliquez sur le bouton suivant pour voir le fichier pdf des commentaires:</p>
+                                <p class="lead"></p>
+                                        <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#comment">
+                                    Voir les commentaires
+                                  </button>
+                                  
+                                  <!-- Modal -->
+                                  <div class="modal fade" id="comment" tabindex="-1" role="dialog" aria-labelledby="comment" aria-hidden="true">
+                                      <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                              <div class="modal-header">
+                                                  <h5 class="modal-title">Commentaires de spécification</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                          <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                  <!-- object/ PDF ... -->
+                                                    <div class="embed-responsive embed-responsive-16by9">
+                                                            <object class="embed-responsive-item" data="CommentairesgenieCivil.pdf"
+                                                            type="application/pdf" internalinstanceid="9" title="">
+                                                            <p>
+                                                            <a href="assets/CommentairesgenieCivil.pdf">Fichier pdf commentaires</a>
+                                                            </p>
+                                                            </object>
+                                                    </div>
+                                              </div>
+                                              <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Divider-->
+                    <!-- Post preview-->
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Pager
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>-->
                 </div>
             </div>
         </div>
-       </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/MFSDIOP/POO2G-nieCivil">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; POO2/Génie Civil</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
